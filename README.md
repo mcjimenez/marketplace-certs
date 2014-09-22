@@ -45,9 +45,13 @@ executing `push_certdb.sh`
     ./add_or_replace_root_cert.sh certdb.tmp marketplace-dev-public-root
     ./add_or_replace_root_cert.sh certdb.tmp marketplace-dev-reviewers-root
 
-If you want to add marketplace-stage and payments-alt support, add the following before executing push_certdb.sh
+If you want to add marketplace-stage support, add the following before executing push_certdb.sh
 
     ./add_or_replace_root_cert.sh certdb.tmp marketplace-stage-public-root
+
+If you want to add payments-alt support, add the following before executing push_certdb.sh
+
+    ./add_or_replace_root_cert.sh certdb.tmp marketplace-paymentsalt-public-root
 
 These steps are done in separate scripts so that `add_or_replace_root_cert.sh`
 can be used for B2G desktop, which doesn't require the push/pull steps.
