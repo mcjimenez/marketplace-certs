@@ -22,6 +22,7 @@ usage()
   echo "<certname> must be one of: marketplace-dev-public-root,"
   echo "                           marketplace-dev-reviewers-root"
   echo "                           marketplace-stage-public-root"
+  echo "                           marketplace-paymentsalt-public-root"
   exit 1
 }
 
@@ -33,6 +34,7 @@ fi
 if [ "$certname" != "marketplace-dev-public-root" -a \
      "$certname" != "marketplace-dev-reviewers-root" -a \
      "$certname" != "marketplace-stage-public-root" -a \
+     "$certname" != "marketplace-paymentsalt-public-root" -a \
      "$certname" != "root-ca-reviewers-marketplace" ]; then
   usage
   exit 1
